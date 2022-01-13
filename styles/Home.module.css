@@ -73,6 +73,7 @@
 
 
 .intro{
+  width: 100%;
   flex-flow: row wrap-reverse;
   padding: 4rem 6rem;
   box-shadow: 0 2px 5px;
