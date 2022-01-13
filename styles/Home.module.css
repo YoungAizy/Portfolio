@@ -201,6 +201,10 @@
    .Nav ul li {
      margin: 0 .4rem;
    }
+
+   .intro {
+     padding: 4rem 2rem;
+   }
 }
 
 @media  screen and (max-width: 340px) {
@@ -210,9 +214,7 @@
   }
 
   .intro div{
-    max-width: 100%;
-    min-width: 100%;
-    padding: 4rem 2rem;
+    min-width: 250px;
     margin:0;
 
   }
