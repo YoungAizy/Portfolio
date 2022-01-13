@@ -205,6 +205,10 @@
    .intro {
      padding: 4rem 2rem;
    }
+
+   .intro div{
+     min-width: 0;
+   }
 }
 
 @media  screen and (max-width: 340px) {
@@ -214,9 +218,7 @@
   }
 
   .intro div{
-    min-width: 250px;
     margin:0;
-
   }
   .Nav{
     text-align: center;
