@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Welcome to my online portfolio showcasing my skillset as a developer for web development and software dev." />
         <meta name='keywords' content='React, Web developer, Full Stack, software developer Freelancer,Software engineer, Responsive designer ,Javascript Developer' />
         <meta name='author' content='Ayanda Marotya'/>
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"/> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.svg" />
       </Head>
 

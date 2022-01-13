@@ -189,6 +189,10 @@
     flex-flow: column-reverse;
   }
 
+  .Nav{
+    padding: 1rem;
+  }
+
   .Nav ul{
     padding-inline-start: 0;
   }
