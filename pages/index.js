@@ -102,7 +102,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      <button className={styles.stickyBtn}><Link href="#header" ><AiOutlineArrowUp/></Link></button>
+      <button className={styles.stickyBtn}><Link href="#header" passHref><AiOutlineArrowUp/></Link></button>
       </main>
       
       <footer className={styles.footer}>
