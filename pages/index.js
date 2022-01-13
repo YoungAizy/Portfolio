@@ -106,7 +106,7 @@ export default function Home() {
       </main>
       
       <footer className={styles.footer}>
-        <p>&copy; Copyright Ayanda Marotya - 2022</p>
+        <p>Copyright &copy; 2022 Ayanda Marotya </p>
          <a
           href="https://www.linkedin.com/in/ayanda-marotya-11185b13a/"
           target="_blank"
