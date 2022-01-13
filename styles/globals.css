@@ -43,9 +43,9 @@ img{
     max-height: fit-content !important;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 550px) {
   header{
-    background-position: bottom;
+    background-position: top;
   }
   
 }

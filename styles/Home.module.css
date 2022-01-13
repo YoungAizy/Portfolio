@@ -188,6 +188,14 @@
     display: flex;
     flex-flow: column-reverse;
   }
+
+  .Nav ul{
+    padding-inline-start: 0;
+  }
+
+   .Nav ul li {
+     margin: 0 .4rem;
+   }
 }
 
 @media  screen and (max-width: 340px) {
@@ -204,12 +212,5 @@
   .Nav{
     text-align: center;
   }
- .Nav ul{
-   flex: 1;
-   padding-inline-start: 0;
- } 
 
- .Nav ul li{
-   margin: 0 .5rem;
- }
 }
