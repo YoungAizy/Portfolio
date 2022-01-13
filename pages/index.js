@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ayanda Marotya | Portfolio</title>
-        <meta name="description" content="Welcome to my online portfolio showcasing my skillset as a developer for web development and software dev." />
+        <meta name="description" content="Welcome to my online portfolio showcasing my skillset as a freelance developer for software and web applications." />
         <meta name='keywords' content='React, Web developer, Full Stack, software developer Freelancer,Software engineer, Responsive designer ,Javascript Developer' />
         <meta name='author' content='Ayanda Marotya'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
