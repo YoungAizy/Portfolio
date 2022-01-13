@@ -84,7 +84,7 @@
 }
 
 .intro div{
-  min-width: 300px;
+  /* min-width: 300px; */
   margin-right: 2rem;
   padding-right: 2rem;
   border-right: 2px solid black;
