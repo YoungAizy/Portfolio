@@ -207,7 +207,7 @@
    }
 
    .intro div{
-     min-width: 0;
+     min-width: initial;
    }
 }
 
