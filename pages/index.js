@@ -9,6 +9,7 @@ import React from 'react';
 import { AiOutlineArrowUp } from "react-icons/ai";
 //import local components
 import Header from '../components/Header'
+import Intro from '../components/Intro'
 
 export default function Home() {
   return (
@@ -26,16 +27,8 @@ export default function Home() {
       <Header/>
 
       <main className={styles.main}>
-        <div className={styles.intro}>
-          <div>
-          <h2>Hi, there!</h2>
-            <p> My name is Ayanda Marotya, I am a Software and Web developer with project experience both on frontend and backend technologies. I also provide SEO and Digital Marketing services.
-              My passion is to design optimised solutions with eye-catching designs. I am always open to grabbing new opportunities and learning new technologies. I am looking forward in hearing from you, and hopefully working together.
-          </p>
-          </div>
-          <Image src={"/display_pic.jpg"} alt="profile display picture" height={250} width={250} />
-        </div>
-          <h2 id={styles.skill_header}>SKILLSET</h2>
+        <Intro />
+        <h2 id={styles.skill_header}>SKILLSET</h2>
         <div className={styles.skills}>
           <div className={styles.web}>
             <h3>&#60; WEB &#47;&#62;</h3>
