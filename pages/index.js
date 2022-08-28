@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { BsLinkedin } from "react-icons/bs";
@@ -12,16 +14,27 @@ import Projects from '../components/Projects';
 
 
 export default function Home() {
+  // if (window.netlifyIdentity) {
+  //   window.netlifyIdentity.on("init", user => {
+  //     if (!user) {
+  //       window.netlifyIdentity.on("login", () => {
+  //         document.location.href = "/admin/";
+  //       });
+  //     }
+  //   });
+  //   return;
+  // }
   return (
     <div>
       <Head>
         <title>Ayanda Marotya | Portfolio</title>
         <meta name="description" content="Welcome to my online portfolio showcasing my skillset as a freelance developer for software and web applications." />
         <meta name='keywords' 
-        content='React developer, Web developer, Full Stack developer, software developer, Freelance developer, Software engineer, mobile developer, Javascript Developer' />
+        content='React developer, Web developer, Full Stack developer, software developer, Wordpress developer, Freelance developer, Software engineer, mobile developer, Javascript Developer' />
         <meta name='author' content='Ayanda Marotya'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.svg" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
 
       <Header/>
