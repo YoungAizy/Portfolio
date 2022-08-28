@@ -4,7 +4,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { BsLinkedin } from "react-icons/bs";
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AiOutlineArrowUp } from "react-icons/ai";
 //import local components
 import Header from '../components/Header';
@@ -14,16 +14,20 @@ import Projects from '../components/Projects';
 
 
 export default function Home() {
-  // if (window.netlifyIdentity) {
-  //   window.netlifyIdentity.on("init", user => {
-  //     if (!user) {
-  //       window.netlifyIdentity.on("login", () => {
-  //         document.location.href = "/admin/";
-  //       });
-  //     }
-  //   });
-  //   return;
-  // }
+
+  useEffect(()=>{
+    if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+    //return;
+  }
+  },[])
+  
   return (
     <div>
       <Head>
