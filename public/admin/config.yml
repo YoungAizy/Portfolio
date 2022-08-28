@@ -35,10 +35,10 @@ collections:
       - {label: "Header", name: "header", widget: "string", default: "Ayanda Marotya"}
       - {label: "Content", name: "content", widget: "markdown"}
 
-  - name: "header banner"
+  - name: "header-banner"
     label: "Header Banner"
     folder: "public/posts"
     create: true
-    slug: "header-banner"
+    slug: "banner"
     fields: 
       - {label: "Images", name: "images", widget: "list",  summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
