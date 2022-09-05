@@ -1,0 +1,9 @@
+{
+  "layout": "project",
+  "tags": "development",
+  "date": "2022-09-05T02:22:37.141Z",
+  "title": "Hello 2",
+  "rating": 1,
+  "body": "Simply a second project so that I can iterate over them in javascript.next.",
+  "thumbnail": "public/images/uploads/display_pic.jpg"
+}
