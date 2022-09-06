@@ -1,5 +1,6 @@
 html,
 body {
+  position:relative;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -39,7 +40,7 @@ p {
 
 img{
     height: inherit !important;
-    min-height: initial !important;
+    /* min-height: initial !important; */
     max-height: fit-content !important;
 }
 
