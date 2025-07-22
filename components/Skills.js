@@ -1,7 +1,9 @@
 import styles from '../styles/Home.module.css';
 
-const WEB = ['HTML5','CSS3','Javascript ES6', 'React.js', 'Redux', 'Node.js & Express', 'MUI and Bootstrap', 'Websockets', 'SEO'];
-const DEV = ['Java', 'Native Android mobile development', 'C#','Python', 'Postgresql','MongoDB','Firebase/Firestore','Git'];
+const WEB = ['HTML5 & CSS3',
+            'Javascript ES6', 'React Ecosystem', 'Node.js & Express', 'MUI and Bootstrap', 
+            'API Development', 'PHP (Wordpress and Laravel)', 'SEO'];
+const DEV = ['Java (JavaFX & Spring)', 'Native Android mobile development','Python (API & AI development)', 'PostgresSQL','MongoDB','Firebase/Firestore','Git'];
 
 export default function Skills (){
     return(

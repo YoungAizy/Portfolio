@@ -65,14 +65,15 @@ export default function Home() {
         <Skills/>
         <h2 id='projects'>PROJECTS</h2>
         <Projects/>
-       {galleryModalVisibility && <ImageModal image={selectedImgPath} thumbnails={graphic_design_paths} setVisibility={setGalleryModalVisibility}/>}
+       {galleryModalVisibility && 
+       <ImageModal image={selectedImgPath} thumbnails={graphic_design_paths} setVisibility={setGalleryModalVisibility}/>}
       <button className={styles.stickyBtn}><Link href="#header" passHref><AiOutlineArrowUp/></Link></button>
       </main>
       
       <footer className={styles.footer}>
         <p>Copyright &copy; { new Date().getFullYear()} Ayanda Marotya </p>
          <a
-          href="https://www.linkedin.com/in/ayanda-marotya-11185b13a/"
+          href="https://www.linkedin.com/in/ayanda-marotya/"
           target="_blank"
           rel="noopener noreferrer"
         >

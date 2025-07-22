@@ -5,8 +5,12 @@ export default function Intro(){
     return(
         <div className={styles.intro}>
         <div>
-        <h2>Ayanda Marotya</h2>
-          <p> Hi there!<br></br><br></br>Meet your coding buddy Ayanda Marotya. I am a Full Stack developer with hands on experience in web and android mobile development.  My first love is Java &#40;React.js being a close second&#41; and alongside it my passion to design optimised solutions with eye-catching designs. I love new challenges and learning new stuff and therefore I&#39;m always looking to expand my knowledge of the tech world and refine my skill.<br></br><br></br>Have a look at the <code>PROJECTS</code> section and send me an email if my work impresses you. I am looking forward to hearing from you, and hopefully working together :&#41;
+        <h2>Software Engineer</h2>
+          <p>
+            I&#39;m Ayanda Marotya; a <em>Full Stack Software Engineer</em> with more than 4 years hands on experience in building scalable web apps using microservices, AWS, and JavaScript frameworks for frontend and backend. 
+            I also have android mobile development experience, utilising GCP and services like Firebase and Maps to build e-haul and chat apps. 
+            <br></br><br></br>Have a look at my <code>PROJECTS</code> and send me an email if my work impresses you.
+            <br></br>Looking forward to hearing from you, and hopefully working together :&#41;
         </p>
         </div>
         <Image src={"/display_pic.jpg"} alt="profile display picture" height={250} width={250} />

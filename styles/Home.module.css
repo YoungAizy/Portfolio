@@ -1,8 +1,12 @@
-.main, .skills, .tools, .intro, .projects, .tags, .footer{
+.main, .skills, .tools_wrapper, .tools_container, .intro, .projects, .tags, .Nav, .footer{
   display: flex;
 }
-.main, .skills, .skills div, .web, .software, .container, .footer{
+.main, .skills, .skills div, .web, .software, .footer{
   flex: 1;
+}
+.logo{
+  margin: auto;
+  height: inherit !important;
 }
 .main {
   min-height: 100vh;
@@ -45,20 +49,35 @@
   padding: 0 6rem;
 }
 
-.tools{
+.tools_wrapper{
   width: 80%;
-  height: 60%;
+  height: 45%; /* original was 60%*/
   margin: auto;
-  padding: 2rem 1.4rem;
+  margin-bottom: 16px;
+  padding: 1rem 1.4rem;
+  /* padding-left: 3rem; */
   justify-content: space-evenly;
   background-color: black;
   opacity: .6;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tools_container {
+  height: 100%;
+  width: 160px;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.tech_tool {
+  margin: 0 1rem
 }
 
 .Nav{
-  display: flex;
-  text-align: end;
-  padding: 1rem 1.2rem;
+  display: contents;
+  text-align: center;
+  padding: 0;
 }
 
 .Nav ul{
@@ -68,12 +87,21 @@
 .Nav ul li{
   display: inline;
   margin: 0 1rem;
+  padding: 2px 6px;
   font-weight: 500;
+  border: 1px solid darkslategrey;
+  border-radius: 8px;
+  outline: none;
+}
+.Nav ul li:hover{
+  background-color: antiquewhite;
+  border-color: white;
+  border-width: 2px;
 }
 
 
 .intro{
-  flex-flow: row wrap-reverse;
+  flex-direction: column-reverse;
   padding: 4rem 6rem;
   box-shadow: 0 2px 5px;
   z-index: 3;
@@ -84,10 +112,20 @@
 }
 
 .intro div{
-  min-width: 300px;
+  /* min-width: 300px;
   margin-right: 2rem;
-  padding-right: 2rem;
-  border-right: 2px solid black;
+  padding-right: 2rem; */
+  border-top: 2px solid black;
+}
+
+.intro span img{
+  margin-left: 1em !important;
+  margin-bottom: 8px !important;
+}
+
+.graphic_pic{
+  width: 250px;
+  height: 250px;
 }
 
 .web, .software{
@@ -98,19 +136,20 @@
 }
 
 .web h3{
-  background-color: rgb(72, 183, 252);
+  background-color: #1772ab;
 }
 
 .software h3{
-  background-color: rgb(47, 255, 64);
+  background-color: #59d177;
 }
 .projects{
   max-width: 780px;
-  margin: 2em;
+  /* row-gap: 20px; */
 }
 .container{
-  min-width: 322px;
+  min-width: 280px;
   max-width: 350px;
+  width: 80vw;
   border: 1px solid lightslategrey;
   border-radius: 1em;
   margin: 1em;
@@ -158,6 +197,7 @@
   position: sticky;
   bottom: 10px;
   align-self: flex-end;
+  z-index: 10;
 }
 
 .footer {
@@ -173,14 +213,52 @@
   border: 1px solid white;
 }
 
-@media screen and (max-width: 790px) {
-  .intro div{
-    border-right: none;
-    border-top: 2px solid black;
+@media screen and (min-width: 770px) {
+  .Nav {
+    display: flex;
+    text-align: end;
+    align-items: center;
+    padding: 1rem 1.2rem;
   }
 
-  .footer p{
+  .Nav ul li{
+    margin: 0 10px;
+  }
+  .intro {
+    flex-flow: row wrap-reverse;
+    padding: 2rem;
+  }
+  .intro div{
+    border-top: none;
+    border-right: 2px solid black;  
+  }
+
+  /*.footer p{
     flex: 1;
+  } */
+}
+
+@media (max-width: 960px){
+  .tools_wrapper {
+    max-width: 605px;
+  }
+}
+@media screen and (min-width: 961px){
+  .tools_container{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+  .tech_tool, .graphic_pic{
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1116px){
+  .tech_tool, .graphic_pic{
+    width: 120px;
   }
 }
 @media (max-width: 550px){

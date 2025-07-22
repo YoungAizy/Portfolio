@@ -22,10 +22,12 @@ a {
 header{
   display: flex;
   flex-flow: column;
-  height: 450px;
+  height: 400px; /* original was 450px*/
   background: url("../public/background.jpg");
   background-attachment: fixed;
   background-position: center;
+  background-color: antiquewhite;
+  background-blend-mode: multiply;
 }
 
 h3 {
@@ -39,9 +41,10 @@ p {
 }
 
 img{
-    height: inherit !important;
+    
     /* min-height: initial !important; */
-    max-height: fit-content !important;
+    /* max-height: fit-content !important; */
+    object-fit: contain;
 }
 
 @media screen and (max-width: 550px) {

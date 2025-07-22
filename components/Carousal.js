@@ -1,7 +1,24 @@
-import Image from 'next/image';
+import styles from '../styles/Home.module.css'
+import { useEffect } from 'react';
 
 
 export default function Carousal({imagePaths,setShowModal,setSelectedImg}){
+
+    useEffect(()=>{
+        const width = window.innerWidth;
+        if(width<=960){
+            const pictures = document.getElementsByClassName('graphic');
+    
+            let position = 0
+            setInterval(() => {
+                pictures[position].style.display = "none";
+                position = (position+1) % pictures.length
+                pictures[position].style.display = "block";
+            }, 3000);
+        }
+
+
+    },[])
 
     const onThumbnailClick = (path)=>{
         setSelectedImg(path);
@@ -10,10 +27,10 @@ export default function Carousal({imagePaths,setShowModal,setSelectedImg}){
 
     return(
         <div style={myClasses.wrapper}>
-            <div style={myClasses.carousel}>
+            <div id='carousel' style={myClasses.carousel}>
                 {imagePaths && imagePaths.map((path,idx)=>(
-                    <div key={idx} onClick={()=>onThumbnailClick(path)} style={myClasses.container}>
-                        <Image style={myClasses.pic} src={path} alt="Pern app showcase" height={250} width={250} />
+                    <div key={idx} onClick={()=>onThumbnailClick(path)} className='graphic' style={myClasses.container}>
+                        <img className={styles.graphic_pic} style={myClasses.pic} src={path} alt="Pern app showcase" height={160} width={160} />
                         </div>
                 ))}
                 
@@ -25,14 +42,18 @@ export default function Carousal({imagePaths,setShowModal,setSelectedImg}){
 
 const myClasses ={
     wrapper:{
-        overflow: 'hide',
         position: 'relative',
-        padding: "2rem 6rem"
+        padding: "1rem 2rem",
+        width: "98vw",
+        height: '300px',
+        overflow: "hidden"
     },
     carousel:{
         display: 'flex',
-        overflow: 'hide',
         flexFlow: "row nowrap",
+        justifyContent: 'center',
+        width: "100%",
+        overflow: "hidden"
     },
     container:{
         margin: "0 1em",
