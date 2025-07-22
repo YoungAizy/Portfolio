@@ -230,7 +230,8 @@
   }
   .intro div{
     border-top: none;
-    border-right: 2px solid black;  
+    border-right: 2px solid black;
+    padding-right: 8px; 
   }
 
   /*.footer p{
