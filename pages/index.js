@@ -45,10 +45,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ayanda Marotya | Portfolio</title>
-        <meta name="description" content="Welcome to my online portfolio showcasing my skillset as a freelance developer for software and web applications." />
+        <title>Ayanda Marotya | Software Engineer</title>
+        <meta name="description" content="Online portfolio showcasing my skillset as a freelance software developer." />
         <meta name='keywords' 
-        content='React developer, Web developer, Full Stack developer, software developer, Wordpress developer, Freelance developer, Software engineer, mobile developer, Javascript Developer' />
+        content='React developer, Web developer, Full Stack developer, Wordpress developer, software developer, Freelance Software engineer, mobile developer, Javascript Developer, Laravel Developer, AWS Developer' />
         <meta name='author' content='Ayanda Marotya'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="/favicon.svg" />
